@@ -1,0 +1,21 @@
+/* "04 Grid" foundation page — Canvas/Container/Column/Breakpoint. Gutter/Margin alias spacing.css, never a new value. */
+:root{
+  --canvas-desktop:1920px;
+  --container-max-width:1440px;
+
+  --grid-columns-desktop:12;
+  --grid-columns-tablet:8;
+  --grid-columns-mobile:4;
+
+  --breakpoint-desktop-min:1200px;
+  --breakpoint-tablet-min:768px;
+  --breakpoint-tablet-max:1199px;
+  --breakpoint-mobile-min:390px;
+  --breakpoint-mobile-max:767px;
+
+  --grid-gutter-desktop:var(--spacing-component-24);
+  --grid-gutter-tablet:var(--spacing-component-16);
+  --grid-gutter-mobile:var(--spacing-component-16);
+  --grid-margin-tablet:var(--spacing-component-32);
+  --grid-margin-mobile:var(--spacing-component-16);
+}

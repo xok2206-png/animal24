@@ -1,0 +1,156 @@
+/* Figma "Semantic" collection — Light/Dark modes. Every value aliases primitive.css (never a raw hex here except the two mode-agnostic overlay values). Components reference ONLY these variables. */
+:root{
+  --surface-canvas:var(--slate-50);
+  --surface-card:var(--slate-0);
+  --surface-subtle:var(--slate-100);
+  --surface-disabled:var(--slate-100);
+  --surface-overlay:rgba(15,23,42,.45);
+
+  --text-heading:var(--slate-900);
+  --text-body:var(--slate-700);
+  --text-muted:var(--slate-500);
+  --text-disabled:var(--slate-300);
+  --text-inverse:var(--slate-0);
+
+  --border-default:var(--slate-200);
+  --border-strong:var(--slate-300);
+  --border-focus:var(--blue-600);
+
+  --brand-primary:var(--blue-600);
+  --brand-hover:var(--blue-700);
+  --brand-pressed:var(--blue-800);
+  --brand-surface:var(--blue-50);
+  --brand-on-primary:var(--slate-0);
+  --brand-text:var(--blue-600);
+
+  --feedback-success-text:var(--green-700);
+  --feedback-success-fill:var(--green-500);
+  --feedback-success-bg:var(--green-50);
+  --feedback-warning-text:var(--amber-600);
+  --feedback-warning-fill:var(--amber-400);
+  --feedback-warning-bg:var(--amber-50);
+  --feedback-error-text:var(--red-500);
+  --feedback-error-bg:var(--red-50);
+  --feedback-info-text:var(--blue-600);
+  --feedback-info-bg:var(--blue-50);
+
+  --status-protected-text:var(--blue-800);
+  --status-protected-bg:var(--blue-50);
+  --status-adoption-text:var(--green-700);
+  --status-adoption-bg:var(--green-50);
+  --status-reserved-text:var(--amber-600);
+  --status-reserved-bg:var(--amber-50);
+  --status-treatment-text:var(--orange-600);
+  --status-treatment-bg:var(--orange-50);
+  --status-ended-text:var(--slate-500);
+  --status-ended-bg:var(--slate-100);
+  --status-emergency-fill:var(--red-600);
+  --status-emergency-on:var(--slate-0);
+
+  --accent-favorite:var(--rose-400);
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --surface-canvas:var(--slate-950);
+    --surface-card:var(--slate-850);
+    --surface-subtle:var(--slate-800);
+    --surface-disabled:var(--slate-750);
+    --surface-overlay:rgba(0,0,0,.6);
+
+    --text-heading:var(--slate-50);
+    --text-body:var(--slate-300);
+    --text-muted:var(--slate-400);
+    --text-disabled:var(--slate-600);
+    --text-inverse:var(--slate-950);
+
+    --border-default:var(--slate-750);
+    --border-strong:var(--slate-600);
+    --border-focus:var(--blue-300);
+
+    --brand-primary:var(--blue-400);
+    --brand-hover:var(--blue-300);
+    --brand-pressed:var(--blue-500);
+    --brand-surface:var(--blue-900);
+    --brand-on-primary:var(--slate-950);
+    --brand-text:var(--blue-300);
+
+    --feedback-success-text:var(--green-400);
+    --feedback-success-fill:var(--green-600);
+    --feedback-success-bg:var(--green-900);
+    --feedback-warning-text:var(--amber-300);
+    --feedback-warning-fill:var(--amber-500);
+    --feedback-warning-bg:var(--amber-900);
+    --feedback-error-text:var(--red-300);
+    --feedback-error-bg:var(--red-900);
+    --feedback-info-text:var(--blue-300);
+    --feedback-info-bg:var(--blue-900);
+
+    --status-protected-text:var(--blue-300);
+    --status-protected-bg:var(--blue-900);
+    --status-adoption-text:var(--green-400);
+    --status-adoption-bg:var(--green-900);
+    --status-reserved-text:var(--amber-300);
+    --status-reserved-bg:var(--amber-900);
+    --status-treatment-text:var(--orange-300);
+    --status-treatment-bg:var(--orange-900);
+    --status-ended-text:var(--slate-400);
+    --status-ended-bg:var(--slate-800);
+    --status-emergency-fill:var(--red-300);
+    --status-emergency-on:var(--red-900);
+
+    --accent-favorite:var(--rose-300);
+  }
+}
+
+/* 헤더 Light/Dark 토글로 강제 전환 시 (OS 설정과 무관하게 항상 적용) */
+:root[data-theme="dark"]{
+  --surface-canvas:var(--slate-950);
+  --surface-card:var(--slate-850);
+  --surface-subtle:var(--slate-800);
+  --surface-disabled:var(--slate-750);
+  --surface-overlay:rgba(0,0,0,.6);
+
+  --text-heading:var(--slate-50);
+  --text-body:var(--slate-300);
+  --text-muted:var(--slate-400);
+  --text-disabled:var(--slate-600);
+  --text-inverse:var(--slate-950);
+
+  --border-default:var(--slate-750);
+  --border-strong:var(--slate-600);
+  --border-focus:var(--blue-300);
+
+  --brand-primary:var(--blue-400);
+  --brand-hover:var(--blue-300);
+  --brand-pressed:var(--blue-500);
+  --brand-surface:var(--blue-900);
+  --brand-on-primary:var(--slate-950);
+  --brand-text:var(--blue-300);
+
+  --feedback-success-text:var(--green-400);
+  --feedback-success-fill:var(--green-600);
+  --feedback-success-bg:var(--green-900);
+  --feedback-warning-text:var(--amber-300);
+  --feedback-warning-fill:var(--amber-500);
+  --feedback-warning-bg:var(--amber-900);
+  --feedback-error-text:var(--red-300);
+  --feedback-error-bg:var(--red-900);
+  --feedback-info-text:var(--blue-300);
+  --feedback-info-bg:var(--blue-900);
+
+  --status-protected-text:var(--blue-300);
+  --status-protected-bg:var(--blue-900);
+  --status-adoption-text:var(--green-400);
+  --status-adoption-bg:var(--green-900);
+  --status-reserved-text:var(--amber-300);
+  --status-reserved-bg:var(--amber-900);
+  --status-treatment-text:var(--orange-300);
+  --status-treatment-bg:var(--orange-900);
+  --status-ended-text:var(--slate-400);
+  --status-ended-bg:var(--slate-800);
+  --status-emergency-fill:var(--red-300);
+  --status-emergency-on:var(--red-900);
+
+  --accent-favorite:var(--rose-300);
+}

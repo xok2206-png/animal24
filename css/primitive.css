@@ -1,0 +1,83 @@
+/* Figma "Primitive" collection — raw palette, single mode. Components must not reference these directly (see semantic.css). */
+:root{
+  --blue-50:#EEF4FE;
+  --blue-100:#D9E6FC;
+  --blue-200:#B7CFF8;
+  --blue-300:#8AB0F2;
+  --blue-400:#5B9BF0;
+  --blue-500:#3F82E4;
+  --blue-600:#2F6FD6;
+  --blue-700:#2459B4;
+  --blue-800:#1C4794;
+  --blue-900:#14315F;
+
+  --slate-0:#FFFFFF;
+  --slate-50:#F7F9FC;
+  --slate-100:#EEF2F8;
+  --slate-200:#E3E8EF;
+  --slate-300:#CBD3DF;
+  --slate-400:#8B96A8;
+  --slate-500:#667085;
+  --slate-600:#4A5568;
+  --slate-700:#3A4453;
+  --slate-750:#2C3648;
+  --slate-800:#232C3D;
+  --slate-850:#1A2130;
+  --slate-900:#131A26;
+  --slate-950:#0F141F;
+
+  --green-50:#E7F7EF;
+  --green-100:#C9ECD7;
+  --green-200:#97D9B2;
+  --green-300:#63C48E;
+  --green-400:#46C47E;
+  --green-500:#1FA86A;
+  --green-600:#128A56;
+  --green-700:#0F7A4A;
+  --green-800:#0B5C38;
+  --green-900:#12321F;
+
+  --amber-50:#FDF3E2;
+  --amber-100:#FAE3BA;
+  --amber-200:#F5CD7E;
+  --amber-300:#F0B445;
+  --amber-400:#E39A1F;
+  --amber-500:#CF8412;
+  --amber-600:#B45309;
+  --amber-700:#8F4207;
+  --amber-800:#6B3105;
+  --amber-900:#3A2C10;
+
+  --orange-50:#FEEDE6;
+  --orange-100:#F9D3C0;
+  --orange-200:#F2AD8B;
+  --orange-300:#F5854F;
+  --orange-400:#E56A30;
+  --orange-500:#D9531F;
+  --orange-600:#C2410C;
+  --orange-700:#9A340A;
+  --orange-800:#6B2A0D;
+  --orange-900:#3A2013;
+
+  --red-50:#FDECEB;
+  --red-100:#F8CCCA;
+  --red-200:#F2A09D;
+  --red-300:#F47272;
+  --red-400:#EC5555;
+  --red-500:#D33A3A;
+  --red-600:#C81E1E;
+  --red-700:#A31818;
+  --red-800:#7A1414;
+  --red-900:#3A1717;
+
+  --rose-50:#FDEAF1;
+  --rose-100:#F9C7D8;
+  --rose-200:#F298B6;
+  --rose-300:#FF85AB;
+  --rose-400:#F0528A;
+  --rose-500:#D62E66;
+  --rose-600:#B52453;
+  --rose-700:#8C1C41;
+  --rose-800:#641530;
+  --rose-900:#3A0D1C;
+}

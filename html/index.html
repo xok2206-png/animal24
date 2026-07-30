@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>국가동물24 — Main A1</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../css/primitive.css">
+<link rel="stylesheet" href="../css/semantic.css">
+<link rel="stylesheet" href="../css/typography.css">
+<link rel="stylesheet" href="../css/spacing.css">
+<link rel="stylesheet" href="../css/radius.css">
+<link rel="stylesheet" href="../css/shadow.css">
+<link rel="stylesheet" href="../css/motion.css">
+<link rel="stylesheet" href="../css/grid.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<section class="hero">
+  <img class="hero__bg" src="../assets/hero-bg-photo.png" alt="">
+  <div class="hero__fade"></div>
+
+  <header class="global_header" id="globalHeader">
+    <div class="header_top">
+      <div class="container">
+        <img class="header_top__icon" src="../assets/hero-flag.svg" alt="">
+        <p>이 누리집은 대한민국 공식 전자정부 누리집입니다.</p>
+      </div>
+    </div>
+    <div class="utility_nav">
+      <div class="container">
+        <a href="#">EN</a>
+        <span class="utility_nav__divider"></span>
+        <a href="#">접근성</a>
+        <span class="utility_nav__divider"></span>
+        <a href="#">사이트맵</a>
+        <span class="utility_nav__divider"></span>
+        <button type="button">KR</button>
+        <div class="theme_toggle" id="themeToggle">
+          <button type="button" data-theme-value="light" aria-pressed="true">Light</button>
+          <button type="button" data-theme-value="dark" aria-pressed="false">Dark</button>
+        </div>
+      </div>
+    </div>
+    <div class="main_row">
+      <div class="container">
+        <a class="brand_logo" href="#">
+          <img src="../assets/hero-logo-mark.svg" alt="">
+          <span class="brand_text">
+            <b>국가동물24</b>
+            <span>국가동물보호정보시스템</span>
+          </span>
+        </a>
+        <nav class="main_nav">
+          <div class="nav_group">
+            <a class="nav_item" href="#">입양·보호 <img src="../assets/hero-nav-chevron.svg" alt=""></a>
+            <a class="nav_item" href="#">실종·신고 <img src="../assets/hero-nav-chevron.svg" alt=""></a>
+            <a class="nav_item" href="#">등록·조회 <img src="../assets/hero-nav-chevron.svg" alt=""></a>
+            <a class="nav_item" href="#">알림·교육 <img src="../assets/hero-nav-chevron.svg" alt=""></a>
+            <a class="nav_item" href="#">⭐ 국가봉사동물 <img src="../assets/hero-nav-chevron.svg" alt=""></a>
+          </div>
+        </nav>
+        <div class="cta_area">
+          <button type="button" class="header_search_btn"><img src="../assets/hero-search-vector.svg" alt="검색" style="width:19px;height:19px"></button>
+          <button type="button" class="header_login_btn"><img src="../assets/hero-user-icon.svg" alt="">로그인</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container hero_content">
+    <div class="hero_copy">
+      <span class="trust_badge">
+        <img src="../assets/hero-live-dot-1.svg" alt="">
+        <span>국가가 운영하는 동물보호 통합 플랫폼</span>
+      </span>
+      <h1 class="hero_title">국가가 함께하는 따뜻한 보호,<br>새로운 가족의 시작</h1>
+      <p class="hero_desc">전국 보호동물 정보를 한눈에 확인하고,<br>신뢰할 수 있는 입양 서비스를 경험하세요.</p>
+    </div>
+
+    <div class="hero_search">
+      <span class="live_badge">
+        <img src="../assets/hero-live-dot-2.svg" alt="">
+        <strong>실시간 업데이트</strong>
+        <span class="live_badge__divider"></span>
+        <span>오늘 입양 가능 1,284마리</span>
+      </span>
+
+      <form class="search_bar" id="heroSearchForm">
+        <div class="search_field">
+          <label>지역</label>
+          <button type="button">서울특별시 <img src="../assets/hero-search-chevron.svg" alt=""></button>
+        </div>
+        <span class="search_bar__divider"></span>
+        <div class="search_field">
+          <label>종류</label>
+          <button type="button">강아지 <img src="../assets/hero-search-chevron.svg" alt=""></button>
+        </div>
+        <span class="search_bar__divider"></span>
+        <div class="search_field">
+          <label>입양상태</label>
+          <button type="button">전체 <img src="../assets/hero-search-chevron.svg" alt=""></button>
+        </div>
+        <button type="submit" class="search_submit">
+          <img src="../assets/hero-search-submit-icon.svg" alt="">
+          검색하기
+        </button>
+      </form>
+
+      <div class="tag_list">
+        <button type="button" class="tag_chip">#입양가능</button>
+        <button type="button" class="tag_chip">#강아지</button>
+        <button type="button" class="tag_chip">#고양이</button>
+        <button type="button" class="tag_chip">#동물등록</button>
+        <button type="button" class="tag_chip">#서울</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Statistics Bar -->
+<div class="stats_bar">
+  <div class="stat_item">
+    <span class="stat_item__label">전국 보호센터</span>
+    <span class="stat_item__value"><b>256</b><span>개소</span></span>
+  </div>
+  <span class="stat_divider"></span>
+  <div class="stat_item">
+    <span class="stat_item__label">연계 동물병원</span>
+    <span class="stat_item__value"><b>1,234</b><span>개소</span></span>
+  </div>
+  <span class="stat_divider"></span>
+  <div class="stat_item">
+    <span class="stat_item__label">보호중 동물</span>
+    <span class="stat_item__value"><b>18,240</b><span>마리</span></span>
+  </div>
+  <span class="stat_divider"></span>
+  <div class="stat_item">
+    <span class="stat_item__label">입양 완료</span>
+    <span class="stat_item__value"><b>12,862</b><span>마리</span></span>
+  </div>
+</div>
+
+<!-- Adoption Process Section -->
+<section class="section">
+  <div class="container">
+    <div class="section_head">
+      <span class="eyebrow"><img src="../assets/process-badge-icon.png" alt="">입양 절차 안내</span>
+      <h2 class="section_title">입양은 이렇게 진행돼요</h2>
+      <p class="section_desc">입양 신청부터 상담, 만남까지 반려동물 입양 절차를 단계별로 확인해보세요.</p>
+    </div>
+
+    <div class="process_list">
+      <div class="process_card">
+        <span class="process_card__index">01</span>
+        <img src="../assets/process-step-icon-1.png" alt="">
+        <h3 class="process_card__title">입양신청</h3>
+        <p class="process_card__desc">관심 있는 보호동물을<br>선택하고 입양 신청서를 작성합니다.</p>
+      </div>
+      <div class="process_card">
+        <span class="process_card__index">02</span>
+        <img src="../assets/process-step-icon-2.png" alt="">
+        <h3 class="process_card__title">상담진행</h3>
+        <p class="process_card__desc">보호센터 담당자와<br>입양 상담을 진행합니다.</p>
+      </div>
+      <div class="process_card">
+        <span class="process_card__index">03</span>
+        <img src="../assets/process-step-icon-3.png" alt="">
+        <h3 class="process_card__title">방문 및 만남</h3>
+        <p class="process_card__desc">보호동물을 직접 만나고<br>교감하는 시간을 가집니다.</p>
+      </div>
+      <div class="process_card">
+        <span class="process_card__index">04</span>
+        <img src="../assets/process-step-icon-4.png" alt="">
+        <h3 class="process_card__title">가족이 되기</h3>
+        <p class="process_card__desc">입양 완료 후<br>새로운 가족이 됩니다.</p>
+      </div>
+    </div>
+
+    <div class="info_banner">
+      <div class="info_banner__content">
+        <img src="../assets/process-banner-illustration.png" alt="">
+        <div class="info_banner__text">
+          <b>입양은 새로운 가족을 만나는 시작입니다.</b>
+          <p>입양은 새로운 가족을 만나는 시작입니다.</p>
+        </div>
+      </div>
+      <a class="ghost_btn" href="#">보호동물 보러가기 <img src="../assets/process-banner-arrow.svg" alt=""></a>
+    </div>
+  </div>
+</section>
+
+<!-- Public Services Section -->
+<section class="section pubsvc_section">
+  <img class="pubsvc_bg_photo" src="../assets/pubsvc-bg-photo.png" alt="">
+  <div class="container">
+    <div class="section_head">
+      <span class="eyebrow"><img src="../assets/pubsvc-badge-icon.png" alt="">공공서비스</span>
+      <h2 class="section_title">반려동물 공공서비스를 이용해보세요</h2>
+      <p class="section_desc">국가동물24에서 제공하는 동물등록부터 반려교육까지,<br>다양한 공공서비스를 쉽고 빠르게 이용할 수 있습니다.</p>
+    </div>
+    <div class="divider" style="margin-bottom:var(--spacing-layout-content)"></div>
+  </div>
+
+  <div class="container">
+    <div class="pubsvc_carousel" id="pubsvcCarousel">
+      <div class="service_card service_card--lg">
+        <span class="service_card__badge" style="background:#fdeceb;color:#e05b5b">인기 서비스</span>
+        <img class="service_card__icon" src="../assets/pubsvc-illustration-5.png" alt="">
+        <h3 class="service_card__title">동물등록</h3>
+        <p class="service_card__desc">반려동물 등록은 의무입니다. 등록하고 다양한 혜택과 정보를 확인하세요.</p>
+        <a class="ghost_btn" href="#">서비스 바로가기</a>
+      </div>
+      <div class="service_card service_card--md">
+        <span class="service_card__badge" style="background:#e3f4ea;color:#22a05f">24시간 이용</span>
+        <img class="service_card__icon" src="../assets/pubsvc-card-icon.svg" alt="">
+        <h3 class="service_card__title">보호동물 조회</h3>
+        <p class="service_card__desc">전국 보호소의 동물을 쉽게 찾아보고 입양까지 연결할 수 있습니다.</p>
+        <a class="ghost_btn" href="#">서비스 바로가기</a>
+      </div>
+      <div class="service_card service_card--sm">
+        <span class="service_card__badge" style="background:#efeafb;color:#8b5cf6">온라인 서비스</span>
+        <img class="service_card__icon" src="../assets/pubsvc-illustration-3.png" alt="">
+        <h3 class="service_card__title">실종·습득 신고</h3>
+        <p class="service_card__desc">실종동물 신고와 습득동물 보호를 빠르게 접수하고 조회할 수 있습니다.</p>
+        <a class="ghost_btn" href="#">서비스 바로가기</a>
+      </div>
+      <div class="service_card service_card--sm">
+        <span class="service_card__badge" style="background:#fef3dc;color:#dd9a2b">병원 찾기</span>
+        <img class="service_card__icon" src="../assets/pubsvc-illustration-2.png" alt="">
+        <h3 class="service_card__title">동물병원 찾기</h3>
+        <p class="service_card__desc">우리 동네 동물병원과 야간·응급 진료 병원을 쉽게 찾아보세요.</p>
+        <a class="ghost_btn" href="#">서비스 바로가기</a>
+      </div>
+      <div class="service_card service_card--sm">
+        <span class="service_card__badge" style="background:#e5eefc;color:#3b6ef5">교육 프로그램</span>
+        <img class="service_card__icon" src="../assets/pubsvc-illustration-1.png" alt="">
+        <h3 class="service_card__title">반려동물 교육·정보</h3>
+        <p class="service_card__desc">반려동물에 대한 올바른 정보와 전문 교육 프로그램을 제공합니다.</p>
+        <a class="ghost_btn" href="#">서비스 바로가기</a>
+      </div>
+    </div>
+
+    <div class="pubsvc_nav">
+      <button type="button" id="pubsvcPrev" aria-label="이전">‹</button>
+      <button type="button" id="pubsvcNext" aria-label="다음">›</button>
+    </div>
+    <div class="pubsvc_dots">
+      <span aria-current="true"></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="trust_bar">
+      <div class="trust_bar__item">
+        <span class="trust_bar__icon">🛡️</span>
+        <div><b>안전한 서비스</b><p>정부 인증으로<br>안전하게 운영됩니다.</p></div>
+      </div>
+      <div class="trust_bar__item">
+        <span class="trust_bar__icon">🔒</span>
+        <div><b>개인정보 보호</b><p>소중한 개인정보를<br>안전하게 보호합니다.</p></div>
+      </div>
+      <div class="trust_bar__item">
+        <span class="trust_bar__icon">📍</span>
+        <div><b>전국 서비스</b><p>전국 어디서나<br>동일한 서비스를 제공합니다.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Protection Animals Section -->
+<section class="section" style="background:var(--surface-card)">
+  <div class="container">
+    <div class="section_head">
+      <span class="eyebrow"><img src="../assets/protect-badge-icon.svg" alt="">보호동물</span>
+      <h2 class="section_title">지금 새로운 가족을 기다리고 있어요.</h2>
+      <p class="section_desc">전국 보호센터의 보호동물 정보를 확인하고 새로운 가족을 만나보세요.</p>
+    </div>
+
+    <div class="protect_toolbar">
+      <div class="filter_tabs" id="typeTabs" role="tablist">
+        <button class="filter_tab" role="tab" aria-selected="true"><img src="../assets/protect-tab-all-icon.svg" alt="">전체</button>
+        <button class="filter_tab" role="tab" aria-selected="false"><img src="../assets/protect-tab-type-icon.svg" alt="">강아지</button>
+        <button class="filter_tab" role="tab" aria-selected="false"><img src="../assets/protect-tab-type-icon.svg" alt="">고양이</button>
+        <button class="filter_tab" role="tab" aria-selected="false"><img src="../assets/protect-tab-type-icon.svg" alt="">기타동물</button>
+      </div>
+      <div class="filter_bar">
+        <button class="filter_chip"><img src="../assets/protect-filter-region-icon.svg" alt="">전지역 <img src="../assets/protect-filter-arrow-1.svg" alt=""></button>
+        <button class="filter_chip"><img src="../assets/protect-filter-breed-icon.svg" alt="">전품종 <img src="../assets/protect-filter-arrow-2.svg" alt=""></button>
+        <button class="filter_chip"><img src="../assets/protect-filter-status-icon.svg" alt="">보호상태 <img src="../assets/protect-filter-arrow-3.svg" alt=""></button>
+        <button class="sort_chip"><img src="../assets/protect-sort-icon.svg" alt="">최신등록</button>
+      </div>
+    </div>
+
+    <div class="animal_grid" id="animalGrid"></div>
+
+    <a class="cta_btn" href="#">더 많은 보호동물 보기 <img src="../assets/protect-badge-icon.svg" alt="" style="filter:brightness(0) invert(1)"></a>
+  </div>
+</section>
+
+<!-- Heroes Section (국가봉사동물) -->
+<section class="section" style="background:var(--surface-canvas)">
+  <div class="container">
+    <div class="section_head">
+      <span class="eyebrow"><img src="../assets/heroes-badge-icon.png" alt="">국가봉사동물</span>
+      <h2 class="section_title">국가를 위해 함께하는 영웅들</h2>
+      <p class="section_desc">탐지견, 구조견, 은퇴견 등<br>국민의 안전과 생명을 위해 활동하는 국가봉사동물을 소개합니다.</p>
+    </div>
+
+    <div class="heroes_layout">
+      <div>
+        <div class="heroes_stats">
+          <div class="heroes_stats_card">
+            <div class="heroes_stat">
+              <img src="../assets/heroes-stat-icon-1.svg" alt="">
+              <div><span class="heroes_stat__label">활약 중인 봉사동물</span><span class="heroes_stat__value"><b>246</b><span>마리</span></span></div>
+            </div>
+            <span class="heroes_stats_divider"></span>
+            <div class="heroes_stat">
+              <img src="../assets/heroes-stat-icon-2.svg" alt="">
+              <div><span class="heroes_stat__label">올해 구조 및 탐지 활동 건수</span><span class="heroes_stat__value"><b>3,892</b><span>건</span></span></div>
+            </div>
+          </div>
+          <div class="heroes_view_all">
+            <span>국가봉사동물</span>
+            <a href="#">전체 보기 →</a>
+          </div>
+        </div>
+
+        <div class="journey">
+          <div class="journey_head">
+            <img src="../assets/heroes-journey-dot.svg" alt="">
+            <span>국가봉사동물의 여정</span>
+          </div>
+          <div class="journey_steps">
+            <div class="journey_step">
+              <img src="../assets/heroes-journey-icon-1.svg" alt="">
+              <div><p class="journey_step__title">훈련</p><p class="journey_step__desc">엄격한 선발과 전문 훈련을 통해<br>임무 수행 능력을 갖춥니다.</p></div>
+            </div>
+            <div class="journey_step">
+              <img src="../assets/heroes-journey-icon-2.svg" alt="">
+              <div><p class="journey_step__title">배치</p><p class="journey_step__desc">각 분야의 현장에 배치되어<br>국가를 위해 임무를 수행합니다.</p></div>
+            </div>
+            <div class="journey_step">
+              <img src="../assets/heroes-journey-icon-3.svg" alt="">
+              <div><p class="journey_step__title">활동</p><p class="journey_step__desc">국민의 안전과 생명을 지키는<br>중요한 역할을 수행합니다.</p></div>
+            </div>
+            <div class="journey_step">
+              <img src="../assets/heroes-journey-icon-4.svg" alt="">
+              <div><p class="journey_step__title">은퇴 후 케어</p><p class="journey_step__desc">은퇴 후에도 건강하고 행복한<br>삶을 지원받습니다.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exhibit_gallery">
+        <div class="exhibit_card">
+          <div class="exhibit_card__body">
+            <span class="exhibit_card__eyebrow">EXHIBIT 01</span>
+            <h3 class="exhibit_card__title">경찰견</h3>
+            <p class="exhibit_card__desc">폭발물·마약 탐지</p>
+          </div>
+          <img class="exhibit_card__photo" src="../assets/heroes-hero-dog.png" alt="경찰견">
+        </div>
+        <div class="exhibit_card">
+          <div class="exhibit_card__body">
+            <span class="exhibit_card__eyebrow">EXHIBIT 02</span>
+            <h3 class="exhibit_card__title">군견</h3>
+            <p class="exhibit_card__desc">국경 경계·수색·작전 지원</p>
+          </div>
+          <img class="exhibit_card__photo" src="../assets/heroes-photo-military-dog.png" alt="군견">
+        </div>
+        <div class="exhibit_card">
+          <div class="exhibit_card__body">
+            <span class="exhibit_card__eyebrow">EXHIBIT 03</span>
+            <h3 class="exhibit_card__title">구조견</h3>
+            <p class="exhibit_card__desc">실종자 수색·재난 구조</p>
+          </div>
+          <img class="exhibit_card__photo" src="../assets/heroes-photo-rescue-dog.png" alt="구조견">
+        </div>
+      </div>
+    </div>
+
+    <div class="archive_banner">
+      <div class="archive_banner__photo_wrap">
+        <img class="archive_banner__photo" src="../assets/heroes-archive-scene.png" alt="">
+      </div>
+      <div class="archive_banner__copy">
+        <span class="archive_banner__label"><img src="../assets/heroes-archive-label-icon.svg" alt="" style="width:16px;height:15px">NATIONAL SERVICE DOG ARCHIVE</span>
+        <h3 class="archive_banner__title">국가봉사동물 아카이브</h3>
+        <p class="archive_banner__desc">더 많은 국가봉사동물들의 이야기와 활동 기록을 확인해보세요.</p>
+      </div>
+      <a class="ghost_btn" href="#">아카이브 둘러보기 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- News Section -->
+<section class="section" style="background:var(--surface-canvas)">
+  <div class="container">
+    <div class="section_head" style="flex-direction:row;align-items:flex-end;justify-content:space-between">
+      <div>
+        <span class="eyebrow"><img src="../assets/news-badge-icon.png" alt="">공공서비스</span>
+        <h2 class="section_title" style="margin-top:var(--spacing-layout-inline)">국가동물보호 소식</h2>
+        <p class="section_desc">입양 캠페인, 정책 안내, 공지 등<br>국가동물보호 서비스의 최신 소식을 확인 할 수 있습니다.</p>
+      </div>
+      <a class="ghost_btn" href="#">전체보기 ›</a>
+    </div>
+    <div class="divider" style="margin-bottom:var(--spacing-layout-content)"></div>
+
+    <div class="news_showcase">
+      <div class="news_hero">
+        <img class="news_hero__photo" src="../assets/news-hero-photo.png" alt="">
+        <div class="news_hero__fade"></div>
+        <div class="news_hero__body">
+          <span class="news_hero__badge">캠페인</span>
+          <h3 class="news_hero__title">2026<br>입양 캠페인의 시작</h3>
+          <p class="news_hero__desc">새로운 가족을 기다리는 아이들에게<br>따뜻한 손길을 건네주세요.</p>
+          <a class="cta_btn" href="#">자세히 보기 ›</a>
+        </div>
+        <div class="news_hero__nav">
+          <span class="news_hero__counter">01<span> / 05</span></span>
+          <button type="button" class="news_hero__nav_btn">‹</button>
+          <button type="button" class="news_hero__nav_btn">›</button>
+        </div>
+        <div class="news_hero__dots">
+          <span aria-current="true"></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="notice_panel">
+        <div class="notice_panel__head">
+          <h3>공지사항</h3>
+          <a href="#">더보기 ›</a>
+        </div>
+        <a class="notice_row" href="#">
+          <span class="notice_row__num notice_row__num--active">01</span>
+          <span class="notice_row__title notice_row__title--link">국가동물24 서비스 점검 안내 <span class="notice_row__flag">중요</span></span>
+          <span class="notice_row__date">2026-07-20</span>
+        </a>
+        <a class="notice_row" href="#">
+          <span class="notice_row__num notice_row__num--muted">02</span>
+          <span class="notice_row__title">동물등록 비용 지원 사업 안내</span>
+          <span class="notice_row__date">2026-07-18</span>
+        </a>
+        <a class="notice_row" href="#">
+          <span class="notice_row__num notice_row__num--muted">03</span>
+          <span class="notice_row__title">여름철 반려동물 건강관리 수칙</span>
+          <span class="notice_row__date">2026-07-15</span>
+        </a>
+        <a class="notice_row" href="#">
+          <span class="notice_row__num notice_row__num--muted">04</span>
+          <span class="notice_row__title">실종·습득동물 신고 포상금 제도 안내</span>
+          <span class="notice_row__date">2026-07-12</span>
+        </a>
+        <a class="notice_row" href="#">
+          <span class="notice_row__num notice_row__num--muted">05</span>
+          <span class="notice_row__title">국가동물보호센터 자원봉사자 모집</span>
+          <span class="notice_row__date">2026-07-10</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="news_cards">
+      <div class="news_card">
+        <img class="news_card__photo" src="../assets/news-card-photo-1.png" alt="">
+        <div class="news_card__fade"></div>
+        <div class="news_card__body">
+          <span class="news_card__badge" style="background:var(--status-protected-bg);color:var(--status-protected-text)">행사</span>
+          <p class="news_card__title">2026 반려동물 문화축제 참여 안내</p>
+          <span class="news_card__date">2026-08-15 ~ 08-16</span>
+        </div>
+        <span class="news_card__arrow">›</span>
+      </div>
+      <div class="news_card">
+        <img class="news_card__photo" src="../assets/news-card-photo-2.png" alt="">
+        <div class="news_card__fade"></div>
+        <div class="news_card__body">
+          <span class="news_card__badge" style="background:var(--status-adoption-bg);color:var(--status-adoption-text)">교육</span>
+          <p class="news_card__title">반려인 대상 무료 교육 프로그램 안내</p>
+          <span class="news_card__date">2026-07-10 ~ 08-20</span>
+        </div>
+        <span class="news_card__arrow">›</span>
+      </div>
+      <div class="news_card">
+        <img class="news_card__photo" src="../assets/news-card-photo-3.png" alt="">
+        <div class="news_card__fade"></div>
+        <div class="news_card__body">
+          <span class="news_card__badge" style="background:var(--status-ended-bg);color:var(--status-ended-text)">보도자료</span>
+          <p class="news_card__title">동물보호 정책 추진 현황 발표</p>
+          <span class="news_card__date">2026-07-08</span>
+        </div>
+        <span class="news_card__arrow">›</span>
+      </div>
+      <div class="news_card">
+        <img class="news_card__photo" src="../assets/news-card-photo-4.png" alt="">
+        <div class="news_card__fade"></div>
+        <div class="news_card__body">
+          <span class="news_card__badge" style="background:var(--status-reserved-bg);color:var(--status-reserved-text)">입양후기</span>
+          <p class="news_card__title">새 가족을 만난 아이들의 행복한 이야기</p>
+          <span class="news_card__date">2026-07-05</span>
+        </div>
+        <span class="news_card__arrow">›</span>
+      </div>
+    </div>
+
+    <div class="quick_services_bar">
+      <div class="quick_services_bar__head">
+        <span>자주 찾는 서비스</span>
+        <p>필요한 서비스를<br>빠르게 이용해보세요.</p>
+      </div>
+      <div class="quick_service"><img src="../assets/news-quick-icon-registration.svg" alt=""><span>동물등록</span></div>
+      <div class="quick_service"><img src="../assets/news-quick-icon-report.svg" alt=""><span>실종·습득 신고</span></div>
+      <span class="quick_service_divider"></span>
+      <div class="quick_service"><img src="../assets/news-quick-icon-hospital.svg" alt=""><span>동물병원 찾기</span></div>
+      <span class="quick_service_divider"></span>
+      <div class="quick_service"><img src="../assets/news-quick-icon-education.svg" alt=""><span>반려교육 신청</span></div>
+      <span class="quick_service_divider"></span>
+      <div class="quick_service"><img src="../assets/news-quick-icon-adoption.svg" alt=""><span>입양안내</span></div>
+      <span class="quick_service_divider"></span>
+      <div class="quick_service"><img src="../assets/news-quick-icon-faq.svg" alt=""><span>자주 묻는 질문</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="gov_footer">
+  <div class="container">
+    <div class="footer_related">
+      <span class="footer_related__label">관련기관</span>
+      <div class="footer_related__links">
+        <a href="#"><img src="../assets/footer-sitelogo-1.png" alt="농림축산검역본부"></a>
+        <a href="#"><img src="../assets/footer-sitelogo-2.png" alt="농림축산식품부"></a>
+        <a href="#"><img src="../assets/footer-sitelogo-3.png" alt="공공데이터포털"></a>
+        <a href="#"><img src="../assets/footer-sitelogo-4.png" alt="정부24"></a>
+        <a href="#"><img src="../assets/footer-sitelogo-5.png" alt="지방행정 인허가데이터"></a>
+      </div>
+    </div>
+
+    <nav class="footer_nav">
+      <a href="#">저작권 정책</a>
+      <a href="#">이용안내</a>
+      <a href="#">웹접근성</a>
+      <a href="#" class="is_strong">개인정보처리방침</a>
+      <a href="#">사이트맵</a>
+    </nav>
+
+    <a class="footer_brand" href="#">
+      <img src="../assets/footer-logo-krds.svg" alt="">
+      <span>국가동물24</span>
+    </a>
+
+    <div class="footer_info">
+      <div class="footer_info__addr">
+        <p>Animal Protection Management System</p>
+        <p>(39660) 경상북도 김천시 혁신8로 177(율곡동)</p>
+        <p>농림축산검역본부</p>
+        <p>대표전화 1577-0954 | 시스템 문의 054-810-8627</p>
+      </div>
+      <div>
+        <div class="footer_links">
+          <a href="#">찾아오시는 길 <img src="../assets/footer-link-arrow.svg" alt=""></a>
+          <a href="#">이용안내 <img src="../assets/footer-link-arrow.svg" alt=""></a>
+        </div>
+        <div class="footer_sns">
+          <a href="#" aria-label="인스타그램"><img src="../assets/footer-sns-instagram.svg" alt=""></a>
+          <a href="#" aria-label="유튜브"><img src="../assets/footer-sns-youtube.svg" alt=""></a>
+          <a href="#" aria-label="X"><img src="../assets/footer-sns-x.svg" alt=""></a>
+          <a href="#" aria-label="페이스북"><img src="../assets/footer-sns-facebook.svg" alt=""></a>
+          <a href="#" aria-label="블로그"><img src="../assets/footer-sns-blog.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <div class="footer_badges">
+        <img src="../assets/footer-wa-badge.png" alt="웹접근성 품질인증마크">
+        <span>WA</span>
+        <span>GOV</span>
+      </div>
+      <div class="footer_copy">
+        <p>Copyright © Animal and Plant Quarantine Agency. All Rights Reserved.</p>
+        <p>국가동물24는 농림축산검역본부에서 운영하는 국가동물보호정보시스템입니다.</p>
+      </div>
+    </div>
+
+    <div class="footer_gov_strip">
+      <span>이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+      <span>운영기관 : 농림축산검역본부</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

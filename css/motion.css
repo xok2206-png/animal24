@@ -1,0 +1,20 @@
+/* "07 Motion" foundation page — Duration + Easing tokens. Only transform/opacity/box-shadow may be animated (performance guardrail). */
+:root{
+  --motion-instant:0ms;
+  --motion-fast:150ms;      /* hover, focus */
+  --motion-normal:250ms;    /* button, input, card */
+  --motion-slow:400ms;      /* dropdown, modal */
+  --motion-extra-slow:600ms;/* hero, page transition */
+
+  --ease-linear:linear;
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --ease-in-out:cubic-bezier(.65,0,.35,1);
+  --ease-spring:cubic-bezier(.34,1.56,.64,1);
+}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    transition:none !important;
+    animation:none !important;
+  }
+}

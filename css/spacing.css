@@ -1,0 +1,21 @@
+/* "03 Spacing" foundation page — Figma "Spacing" variable collection, single mode. */
+:root{
+  --spacing-component-4:4px;
+  --spacing-component-8:8px;
+  --spacing-component-16:16px;
+  --spacing-component-24:24px;
+  --spacing-component-32:32px;
+  --spacing-component-40:40px;
+  --spacing-component-48:48px;
+  --spacing-component-56:56px;
+  --spacing-component-64:64px;
+  --spacing-component-80:80px;
+
+  --spacing-layout-section:160px;
+  --spacing-layout-component:120px;
+  --spacing-layout-content:80px;
+  --spacing-layout-text:40px;
+  --spacing-layout-inline:24px;
+  --spacing-layout-icon:16px;
+  --spacing-layout-small:8px;
+}

@@ -1,0 +1,14 @@
+/* "05 Radius" foundation page — Figma "Radius" variable collection, single mode. */
+:root{
+  --radius-xs:8px;
+  --radius-s:12px;
+  --radius-m:16px;
+  --radius-l:20px;
+  --radius-xl:24px;
+  --radius-full:999px;
+
+  --border-none:0px;
+  --border-thin:1px;
+  --border-medium:2px;
+  --border-thick:4px;
+}

@@ -1,0 +1,15 @@
+/* "02 Typography" foundation page — font family + Type Scale (Noto Sans KR 기반, Pretendard Variable 렌더링). */
+:root{
+  --font-family-primary:'Pretendard Variable','Pretendard',-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+
+  --type-h1-size:56px;   --type-h1-line:68px;   --type-h1-weight:700; --type-h1-tracking:-3%;
+  --type-h2-size:48px;   --type-h2-line:60px;   --type-h2-weight:700; --type-h2-tracking:-2%;
+  --type-h3-size:32px;   --type-h3-line:42px;   --type-h3-weight:700; --type-h3-tracking:0;
+  --type-h4-size:24px;   --type-h4-line:34px;   --type-h4-weight:700; --type-h4-tracking:0;
+  --type-subtitle-size:20px;    --type-subtitle-line:30px;    --type-subtitle-weight:700; --type-subtitle-tracking:0;
+  --type-body-large-size:18px;  --type-body-large-line:30px;  --type-body-large-weight:400; --type-body-large-tracking:0;
+  --type-body-size:16px;        --type-body-line:26px;        --type-body-weight:400; --type-body-tracking:0;
+  --type-small-size:14px;       --type-small-line:22px;       --type-small-weight:500; --type-small-tracking:0;
+  --type-caption-size:13px;     --type-caption-line:20px;     --type-caption-weight:500; --type-caption-tracking:0;
+  --type-badge-size:13px;       --type-badge-line:18px;       --type-badge-weight:700; --type-badge-tracking:0;
+}
